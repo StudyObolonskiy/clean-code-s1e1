@@ -6,23 +6,23 @@
   </head>
   <body>
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="more_info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-element">
-      <section id="top-section">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
+    <main class="tobo-app">
+      <section class="add-task">
+        <h3 class="add-task__title">Add Item</h3>
+        <div class="add-task__row-wrapper">
+          <input id="new-task" class="task__input" type="text">
           <button>Add</button>
         </div>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="in-complete-tasks">
+      <section class="in-progress">
+        <h3 class="in-progress__title">Todo</h3>
+        <ul id="in-progress" class="in-progress__list">
           <li>
             <input type="checkbox">
-            <label class="task">Pay Bills</label>
+            <label class="task__input">Pay Bills</label>
             <input type="text">
             <button class="edit">Edit</button>
             <button class="delete">
@@ -32,7 +32,7 @@
           <li class="edit-mode">
             <input type="checkbox">
             <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
+            <input type="text" value="Go Shopping" class="task__input">
             <button class="edit">Save</button>
             <button class="delete">
               <img src="./remove.svg" alt="">
@@ -40,8 +40,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Completed</h3>
+      <section class="complete">
+        <h3 class="complete__title">Completed</h3>
         <ul id="completed-tasks">
           <li>
             <input type="checkbox" checked>

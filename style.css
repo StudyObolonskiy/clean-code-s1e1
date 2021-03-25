@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more_inf {
+.header .more_info {
   font-family: fantasy, cursive;
 }
 
@@ -24,17 +24,17 @@ body {
 }
 
 }
-.centered-element {
+.tobo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.add-task__row-wrapper {
   display: flex;
 }
 ul {
@@ -62,8 +62,9 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.add-task__title,
+.in-progress__title,
+.complete__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -71,6 +72,10 @@ label[for="new-task"] {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+}
+.add-task__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 input[type="text"] {
   margin: 0;
