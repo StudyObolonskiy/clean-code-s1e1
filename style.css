@@ -54,7 +54,8 @@ body {
 .task__checkbox,
 .complete__input,
 .in-progress__input,
-.add-task__input
+.add-task__input,
+.task__input,
 .add-task__btn,
 .edit__btn,
 .delete__btn {
@@ -86,7 +87,10 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task__input,
+.complete__input,
+.in-progress__input,
+.add-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
